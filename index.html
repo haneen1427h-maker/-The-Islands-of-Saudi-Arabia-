@@ -2,22 +2,15 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="رحلة إلى جزر المملكة العربية السعودية" data-en="A Journey to the Islands of Saudi Arabia">رحلة إلى جزر المملكة العربية السعودية</title>
 
-    <title>رحلة إلى جزر المملكة العربية السعودية</title>
-
-    <!-- Arabic Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -25,1975 +18,1027 @@
             scroll-behavior: smooth;
         }
 
-
         body {
-
             font-family: "Cairo", sans-serif;
-
             background: #f4faf9;
-
             color: #164c55;
-
             line-height: 1.8;
-
         }
-
-
-        /* =========================
-           NAVIGATION
-        ========================= */
 
         nav {
-
             position: fixed;
-
             top: 18px;
-
             right: 50%;
-
             transform: translateX(50%);
-
             width: 88%;
-
             max-width: 1050px;
-
             background: rgba(17, 72, 82, 0.92);
-
             padding: 11px 25px;
-
             border-radius: 50px;
-
             z-index: 1000;
-
             box-shadow: 0 8px 30px rgba(0,0,0,0.13);
-
             backdrop-filter: blur(12px);
-
         }
-
 
         nav ul {
-
             list-style: none;
-
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
             gap: 35px;
-
         }
-
 
         nav a {
-
             color: white;
-
             text-decoration: none;
-
             font-size: 13px;
-
             font-weight: 500;
-
             transition: 0.3s;
-
         }
-
 
         nav a:hover {
-
             color: #b9e6df;
-
         }
 
+        #languageBtn {
+            display: block;
+            margin: 8px auto 0;
+            padding: 5px 18px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 25px;
+            background: transparent;
+            color: white;
+            font-family: "Cairo", sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-        /* =========================
-           HERO
-        ========================= */
+        #languageBtn:hover {
+            background: white;
+            color: #164c55;
+        }
 
         .hero {
-
             height: 720px;
-
             position: relative;
-
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
             text-align: center;
-
             color: white;
-
             overflow: hidden;
-
             background-image:
-
                 linear-gradient(
                     rgba(0, 57, 73, 0.18),
                     rgba(0, 45, 60, 0.58)
                 ),
-
                 url("love.jpg");
-
             background-size: cover;
-
             background-position: center;
-
         }
-
 
         .hero::after {
-
             content: "";
-
             position: absolute;
-
             bottom: -2px;
-
             left: 0;
-
             width: 100%;
-
             height: 90px;
-
             background: #f4faf9;
-
             border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-
         }
-
 
         .hero-content {
-
             position: relative;
-
             z-index: 2;
-
             max-width: 750px;
-
             padding: 20px;
-
             margin-top: -50px;
-
         }
-
 
         .hero h1 {
-
             font-size: 48px;
-
             line-height: 1.35;
-
             font-weight: 800;
-
             margin-bottom: 15px;
-
             text-shadow: 0 4px 20px rgba(0,0,0,0.25);
-
         }
-
 
         .hero p {
-
             font-size: 17px;
-
             color: #f2ffff;
-
             margin-bottom: 28px;
-
         }
-
 
         .hero-btn {
-
             display: inline-block;
-
             background: #0d9cad;
-
             color: white;
-
             padding: 11px 30px;
-
             border-radius: 30px;
-
             text-decoration: none;
-
             font-size: 14px;
-
             font-weight: 600;
-
             transition: 0.3s;
-
             box-shadow: 0 8px 20px rgba(0,0,0,0.18);
-
         }
-
 
         .hero-btn:hover {
-
             transform: translateY(-3px);
-
             background: #087f90;
-
         }
-
-
-        /* =========================
-           GENERAL
-        ========================= */
 
         section {
-
             padding: 75px 8%;
-
         }
-
 
         .section-title {
-
             text-align: center;
-
             margin-bottom: 38px;
-
         }
-
 
         .section-title h2 {
-
             color: #15515c;
-
             font-size: 30px;
-
             font-weight: 800;
-
             margin-bottom: 5px;
-
         }
-
 
         .section-title p {
-
             color: #779194;
-
             font-size: 13px;
-
         }
-
-
-        /* =========================
-           INTRODUCTION
-        ========================= */
 
         .intro {
-
             max-width: 1100px;
-
             margin: auto;
-
             display: grid;
-
             grid-template-columns: 0.9fr 1.1fr;
-
             gap: 55px;
-
             align-items: center;
-
         }
-
 
         .intro-image {
-
             height: 330px;
-
             border-radius: 20px;
-
             overflow: hidden;
-
             box-shadow: 0 12px 35px rgba(20,70,80,0.12);
-
         }
-
 
         .intro-image img {
-
             width: 100%;
-
             height: 100%;
-
             object-fit: cover;
-
         }
-
 
         .intro-text h2 {
-
             font-size: 28px;
-
             color: #15515c;
-
             margin-bottom: 12px;
-
         }
-
 
         .intro-text p {
-
             color: #657c80;
-
             font-size: 14px;
-
             margin-bottom: 12px;
-
         }
-
 
         .features {
-
             display: flex;
-
             gap: 30px;
-
             margin-top: 20px;
-
         }
-
 
         .feature {
-
             text-align: center;
-
         }
-
 
         .feature-icon {
-
             width: 48px;
-
             height: 48px;
-
             border-radius: 50%;
-
             background: #e4f4f1;
-
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
             font-size: 22px;
-
             margin: auto;
-
         }
-
 
         .feature strong {
-
             display: block;
-
             font-size: 11px;
-
             color: #557277;
-
             margin-top: 5px;
-
         }
-
-
-        /* =========================
-           ISLANDS
-        ========================= */
 
         .islands {
-
             background: #eaf6f5;
-
         }
-
 
         .island-grid {
-
             max-width: 1150px;
-
             margin: auto;
-
             display: grid;
-
             grid-template-columns: repeat(4, 1fr);
-
             gap: 18px;
-
         }
-
 
         .island-card {
-
             background: white;
-
             border-radius: 18px;
-
             overflow: hidden;
-
             box-shadow: 0 7px 22px rgba(25,75,85,0.08);
-
             transition: 0.3s;
-
         }
-
 
         .island-card:hover {
-
             transform: translateY(-6px);
-
             box-shadow: 0 14px 30px rgba(25,75,85,0.13);
-
         }
-
 
         .island-image {
-
             height: 170px;
-
             overflow: hidden;
-
             background: #dceeed;
-
         }
-
 
         .island-image img {
-
             width: 100%;
-
             height: 100%;
-
             object-fit: cover;
-
             transition: 0.4s;
-
         }
-
 
         .island-card:hover .island-image img {
-
             transform: scale(1.04);
-
         }
-
-
-        /* أم القماري بدون تكبير */
 
         .qamari-image img {
-
             object-fit: cover;
-
             transform: scale(1);
-
         }
-
 
         .island-card:hover .qamari-image img {
-
             transform: scale(0.91);
-
         }
-
 
         .island-content {
-
             padding: 15px 17px 18px;
-
             text-align: center;
-
         }
-
 
         .island-content h3 {
-
             color: #15515c;
-
             font-size: 17px;
-
             margin-bottom: 5px;
-
         }
-
 
         .island-content p {
-
             color: #718589;
-
             font-size: 11px;
-
             line-height: 1.9;
-
             min-height: 63px;
-
         }
-
 
         .small-btn {
-
             display: inline-block;
-
             margin-top: 8px;
-
             padding: 5px 18px;
-
             border-radius: 20px;
-
             background: #1298a9;
-
             color: white;
-
             text-decoration: none;
-
             font-size: 10px;
-
         }
 
-
-        /* =========================
-           MARINE LIFE
-        ========================= */
-
         .marine {
-
             position: relative;
-
             background:
-
                 linear-gradient(
                     rgba(5,50,64,0.92),
                     rgba(5,50,64,0.92)
                 ),
-
                 url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Coral%20reef%20in%20the%20red%20sea.jpg");
-
             background-size: cover;
-
             background-position: center;
-
             color: white;
-
         }
-
 
         .marine .section-title h2 {
-
             color: white;
-
         }
-
 
         .marine .section-title p {
-
             color: #c1d8db;
-
         }
-
 
         .marine-grid {
-
             max-width: 1050px;
-
             margin: auto;
-
             display: grid;
-
             grid-template-columns: repeat(4, 1fr);
-
             gap: 18px;
-
         }
-
 
         .marine-card {
-
             background: rgba(255,255,255,0.07);
-
             border: 1px solid rgba(255,255,255,0.14);
-
             border-radius: 17px;
-
             padding: 12px;
-
             text-align: center;
-
             transition: 0.3s;
-
         }
-
 
         .marine-card:hover {
-
             transform: translateY(-6px);
-
             background: rgba(255,255,255,0.12);
-
         }
-
 
         .marine-card img {
-
             width: 100%;
-
             height: 125px;
-
             object-fit: cover;
-
             border-radius: 50%;
-
             border: 3px solid rgba(255,255,255,0.25);
-
             margin-bottom: 8px;
-
         }
-
 
         .marine-card h3 {
-
             font-size: 14px;
-
             margin-bottom: 3px;
-
         }
-
 
         .marine-card p {
-
             color: #c7dadd;
-
             font-size: 10px;
-
             line-height: 1.7;
-
         }
-
-
-        /* =========================
-           GALLERY
-        ========================= */
 
         .gallery {
-
             background: #f7fbfa;
-
         }
-
 
         .gallery-wrapper {
-
             max-width: 1100px;
-
             margin: auto;
-
             display: flex;
-
             align-items: center;
-
             gap: 12px;
-
         }
-
 
         .gallery-container {
-
             width: 100%;
-
             overflow: hidden;
-
             border-radius: 20px;
-
         }
-
 
         .gallery-track {
-
             display: flex;
-
             gap: 15px;
-
             transition: transform 0.5s ease;
-
         }
-
 
         .gallery-item {
-
             min-width: calc(33.333% - 10px);
-
             height: 190px;
-
             border-radius: 17px;
-
             overflow: hidden;
-
             cursor: pointer;
-
             flex-shrink: 0;
-
             box-shadow: 0 6px 18px rgba(20,70,80,0.1);
-
         }
-
 
         .gallery-item img {
-
             width: 100%;
-
             height: 100%;
-
             object-fit: cover;
-
             transition: 0.4s;
-
         }
-
 
         .gallery-item:hover img {
-
             transform: scale(1.05);
-
         }
-
 
         .gallery-btn {
-
             width: 42px;
-
             height: 42px;
-
             min-width: 42px;
-
             border: none;
-
             border-radius: 50%;
-
             background: #d9f0ed;
-
             color: #157181;
-
             font-size: 22px;
-
             cursor: pointer;
-
             transition: 0.3s;
-
         }
-
 
         .gallery-btn:hover {
-
             background: #b9e3de;
-
             transform: scale(1.07);
-
         }
-
 
         .gallery-dots {
-
             display: flex;
-
             justify-content: center;
-
             gap: 7px;
-
             margin-top: 18px;
-
         }
-
 
         .dot {
-
             width: 7px;
-
             height: 7px;
-
             background: #b9d9d7;
-
             border-radius: 50%;
-
             cursor: pointer;
-
             transition: 0.3s;
-
         }
-
 
         .dot.active {
-
             width: 20px;
-
             border-radius: 10px;
-
             background: #148e9f;
-
         }
-
-
-        /* =========================
-           POPUP
-        ========================= */
 
         .popup {
-
             position: fixed;
-
             inset: 0;
-
             background: rgba(0,0,0,0.86);
-
             display: none;
-
             align-items: center;
-
             justify-content: center;
-
             z-index: 3000;
-
             padding: 30px;
-
         }
-
 
         .popup img {
-
             max-width: 90%;
-
             max-height: 85vh;
-
             border-radius: 18px;
-
         }
-
 
         .close-popup {
-
             position: absolute;
-
             top: 20px;
-
             left: 30px;
-
             color: white;
-
             font-size: 42px;
-
             cursor: pointer;
-
         }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
 
         footer {
-
             background: #083d4b;
-
             color: white;
-
             text-align: center;
-
             padding: 28px;
-
         }
-
 
         footer h3 {
-
             font-size: 16px;
-
             margin-bottom: 3px;
-
         }
-
 
         footer p {
-
             color: #b9d0d4;
-
             font-size: 11px;
-
         }
-
-
-        /* =========================
-           RESPONSIVE
-        ========================= */
 
         @media (max-width: 1000px) {
-
             .island-grid {
-
                 grid-template-columns: repeat(2, 1fr);
-
             }
-
 
             .marine-grid {
-
                 grid-template-columns: repeat(2, 1fr);
-
             }
-
 
             .intro {
-
                 grid-template-columns: 1fr;
-
             }
-
 
             .intro-image {
-
                 height: 300px;
-
             }
-
 
             .gallery-item {
-
                 min-width: calc(50% - 8px);
-
             }
-
         }
-
 
         @media (max-width: 600px) {
-
             nav {
-
                 width: 94%;
-
                 padding: 9px 12px;
-
             }
-
 
             nav ul {
-
                 gap: 10px;
-
             }
-
 
             nav a {
-
                 font-size: 9px;
-
             }
-
 
             .hero {
-
                 height: 650px;
-
             }
-
 
             .hero h1 {
-
                 font-size: 31px;
-
             }
-
 
             .hero p {
-
                 font-size: 13px;
-
             }
-
 
             section {
-
                 padding: 60px 5%;
-
             }
-
 
             .section-title h2 {
-
                 font-size: 25px;
-
             }
-
 
             .island-grid {
-
                 grid-template-columns: 1fr;
-
             }
-
 
             .marine-grid {
-
                 grid-template-columns: repeat(2, 1fr);
-
             }
-
 
             .marine-card img {
-
                 height: 105px;
-
             }
-
 
             .gallery-item {
-
                 min-width: 100%;
-
             }
-
 
             .features {
-
                 justify-content: center;
-
             }
-
         }
-
     </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     NAVIGATION
-========================= -->
-
 <nav>
-
     <ul>
-
-        <li>
-            <a href="#home">الرئيسية</a>
-        </li>
-
-        <li>
-            <a href="#intro">مقدمة</a>
-        </li>
-
-        <li>
-            <a href="#islands">جزر المملكة</a>
-        </li>
-
-        <li>
-            <a href="#marine">الحياة البحرية</a>
-        </li>
-
-        <li>
-            <a href="#gallery">معرض الصور</a>
-        </li>
-
+        <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="#intro" data-ar="مقدمة" data-en="Introduction">مقدمة</a></li>
+        <li><a href="#islands" data-ar="جزر المملكة" data-en="Saudi Islands">جزر المملكة</a></li>
+        <li><a href="#marine" data-ar="الحياة البحرية" data-en="Marine Life">الحياة البحرية</a></li>
+        <li><a href="#gallery" data-ar="معرض الصور" data-en="Photo Gallery">معرض الصور</a></li>
     </ul>
-
+    <button id="languageBtn" type="button">English</button>
 </nav>
 
-
-
-<!-- =========================
-     HERO
-========================= -->
-
 <section class="hero" id="home">
-
     <div class="hero-content">
-
         <h1>
-            رحلة إلى جزر
+            <span data-ar="رحلة إلى جزر" data-en="A Journey to the Islands of">رحلة إلى جزر</span>
             <br>
-            المملكة العربية السعودية
+            <span data-ar="المملكة العربية السعودية" data-en="Saudi Arabia">المملكة العربية السعودية</span>
         </h1>
 
-        <p>
-            اكتشف جمال الجزر السعودية
-            وطبيعتها الساحرة وحياتها البحرية
+        <p data-ar="اكتشف جمال الجزر السعودية وطبيعتها الساحرة وحياتها البحرية"
+           data-en="Discover the beauty of Saudi islands, their stunning nature, and marine life.">
+            اكتشف جمال الجزر السعودية وطبيعتها الساحرة وحياتها البحرية
         </p>
 
-        <a href="#intro" class="hero-btn">
-            ابدأ الرحلة ↓
-        </a>
-
+        <a href="#intro" class="hero-btn"
+           data-ar="ابدأ الرحلة ↓" data-en="Start the Journey ↓">ابدأ الرحلة ↓</a>
     </div>
-
 </section>
-
-
-
-<!-- =========================
-     INTRO
-========================= -->
 
 <section id="intro">
-
     <div class="intro">
-
-
         <div class="intro-image">
-
-            <img
-                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Farasan%20Island%204.jpg"
-                alt="جزيرة فرسان">
-
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Farasan%20Island%204.jpg"
+                 alt="جزيرة فرسان"
+                 data-alt-ar="جزيرة فرسان"
+                 data-alt-en="Farasan Island">
         </div>
-
 
         <div class="intro-text">
+            <h2 data-ar="مقدمة عن الرحلة" data-en="About the Journey">مقدمة عن الرحلة</h2>
 
-            <h2>
-                مقدمة عن الرحلة
-            </h2>
-
-
-            <p>
-                تتميز المملكة العربية السعودية بسواحل
-                طويلة وجزر متنوعة تمتد على البحر الأحمر
-                والخليج العربي.
+            <p data-ar="تتميز المملكة العربية السعودية بسواحل طويلة وجزر متنوعة تمتد على البحر الأحمر والخليج العربي."
+               data-en="Saudi Arabia has long coastlines and diverse islands along the Red Sea and the Arabian Gulf.">
+                تتميز المملكة العربية السعودية بسواحل طويلة وجزر متنوعة تمتد على البحر الأحمر والخليج العربي.
             </p>
 
-
-            <p>
-                وتجمع هذه الجزر بين الشواطئ الرملية
-                والمياه الصافية والشعاب المرجانية
-                والتنوع الغني في الحياة البحرية.
+            <p data-ar="وتجمع هذه الجزر بين الشواطئ الرملية والمياه الصافية والشعاب المرجانية والتنوع الغني في الحياة البحرية."
+               data-en="These islands combine sandy beaches, clear waters, coral reefs, and rich marine biodiversity.">
+                وتجمع هذه الجزر بين الشواطئ الرملية والمياه الصافية والشعاب المرجانية والتنوع الغني في الحياة البحرية.
             </p>
-
 
             <div class="features">
-
-
                 <div class="feature">
-
-                    <div class="feature-icon">
-                        🏝️
-                    </div>
-
-                    <strong>
-                        جزر ساحرة
-                    </strong>
-
+                    <div class="feature-icon">🏝️</div>
+                    <strong data-ar="جزر ساحرة" data-en="Beautiful Islands">جزر ساحرة</strong>
                 </div>
 
-
                 <div class="feature">
-
-                    <div class="feature-icon">
-                        🌊
-                    </div>
-
-                    <strong>
-                        مياه صافية
-                    </strong>
-
+                    <div class="feature-icon">🌊</div>
+                    <strong data-ar="مياه صافية" data-en="Clear Waters">مياه صافية</strong>
                 </div>
 
-
                 <div class="feature">
-
-                    <div class="feature-icon">
-                        🐠
-                    </div>
-
-                    <strong>
-                        حياة بحرية
-                    </strong>
-
+                    <div class="feature-icon">🐠</div>
+                    <strong data-ar="حياة بحرية" data-en="Marine Life">حياة بحرية</strong>
                 </div>
-
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     ISLANDS
-========================= -->
-
 <section class="islands" id="islands">
-
-
     <div class="section-title">
-
-        <h2>
-            جزر المملكة
-        </h2>
-
-        <p>
+        <h2 data-ar="جزر المملكة" data-en="Islands of Saudi Arabia">جزر المملكة</h2>
+        <p data-ar="اكتشف بعض أجمل الجزر السعودية"
+           data-en="Discover some of Saudi Arabia's most beautiful islands">
             اكتشف بعض أجمل الجزر السعودية
         </p>
-
     </div>
-
-
 
     <div class="island-grid">
 
-
-        <!-- FARASAN -->
-
         <div class="island-card">
-
             <div class="island-image">
-
-                <img
-                    src="farasan.jpg"
-                    alt="جزر فرسان">
-
+                <img src="farasan.jpg" alt="جزر فرسان"
+                     data-alt-ar="جزر فرسان" data-alt-en="Farasan Islands">
             </div>
-
-
             <div class="island-content">
-
-                <h3>
-                    جزيرة فرسان
-                </h3>
-
-                <p>
-                    أرخبيل جميل في منطقة جازان
-                    يتميز بالمياه الفيروزية والشواطئ
-                    والتنوع البيئي.
+                <h3 data-ar="جزيرة فرسان" data-en="Farasan Islands">جزيرة فرسان</h3>
+                <p data-ar="أرخبيل جميل في منطقة جازان يتميز بالمياه الفيروزية والشواطئ والتنوع البيئي."
+                   data-en="A beautiful archipelago in Jazan, known for its turquoise waters, beaches, and biodiversity.">
+                    أرخبيل جميل في منطقة جازان يتميز بالمياه الفيروزية والشواطئ والتنوع البيئي.
                 </p>
-
-                <a
-                    class="small-btn"
-                    href="https://www.visitsaudi.com/ar/jazan/attraction/farasan-islands-protected-area"
-                    target="_blank">
-
-                    اكتشف المزيد
-
-                </a>
-
+                <a class="small-btn"
+                   href="https://www.visitsaudi.com/ar/jazan/attraction/farasan-islands-protected-area"
+                   target="_blank" rel="noopener noreferrer"
+                   data-ar="اكتشف المزيد" data-en="Discover More">اكتشف المزيد</a>
             </div>
-
         </div>
 
-
-
-        <!-- DUMSUK -->
-
         <div class="island-card">
-
             <div class="island-image">
-
-                <img
-                    src="sebaraa.jpg"
-                    alt="جزيرة شيبارة">
-
+                <img src="sebaraa.jpg" alt="جزيرة شيبارة"
+                     data-alt-ar="جزيرة شيبارة" data-alt-en="Sheybarah Island">
             </div>
-
-
             <div class="island-content">
-
-                <h3>
-                    جزيرة شيبارة
-                </h3>
-
-                <p>
-                    جزيرة شيبارة هي وجهة سياحية فاخرة وملاذ بيئي ساحر تقع في مياه البحر الأحمر بالمملكة العربية السعودية
+                <h3 data-ar="جزيرة شيبارة" data-en="Sheybarah Island">جزيرة شيبارة</h3>
+                <p data-ar="جزيرة شيبارة هي وجهة سياحية فاخرة وملاذ بيئي ساحر تقع في مياه البحر الأحمر بالمملكة العربية السعودية."
+                   data-en="Sheybarah Island is a luxury tourism destination and a beautiful ecological retreat in the Saudi Red Sea.">
+                    جزيرة شيبارة هي وجهة سياحية فاخرة وملاذ بيئي ساحر تقع في مياه البحر الأحمر بالمملكة العربية السعودية.
                 </p>
-                 <a
-                    class="small-btn"
-                    href="https://youtu.be/Vi0eJ9ZtPxc?si=jkkpeLg_Aih-SyU4"
-                    target="_blank">
-
-                    اكتشف المزيد
-
-                </a>
-
-
+                <a class="small-btn"
+                   href="https://youtu.be/Vi0eJ9ZtPxc?si=jkkpeLg_Aih-SyU4"
+                   target="_blank" rel="noopener noreferrer"
+                   data-ar="اكتشف المزيد" data-en="Discover More">اكتشف المزيد</a>
             </div>
-
         </div>
 
-
-
-        <!-- SINDALAH -->
-
         <div class="island-card">
-
             <div class="island-image">
-
-                <img
-                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sindalah%20Illustartion.png"
-                    alt="جزيرة سندالة">
-
+                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sindalah%20Illustartion.png"
+                     alt="جزيرة سندالة"
+                     data-alt-ar="جزيرة سندالة" data-alt-en="Sindalah Island">
             </div>
-
-
             <div class="island-content">
-
-                <h3>
-                    جزيرة سندالة
-                </h3>
-
-                <p>
-                    جزيرة سعودية في البحر الأحمر
-                    ضمن منطقة نيوم وتتميز بجمالها
-                    البحري والطبيعي.
+                <h3 data-ar="جزيرة سندالة" data-en="Sindalah Island">جزيرة سندالة</h3>
+                <p data-ar="جزيرة سعودية في البحر الأحمر ضمن منطقة نيوم وتتميز بجمالها البحري والطبيعي."
+                   data-en="A Saudi island in the Red Sea, part of NEOM, known for its marine and natural beauty.">
+                    جزيرة سعودية في البحر الأحمر ضمن منطقة نيوم وتتميز بجمالها البحري والطبيعي.
                 </p>
-
-                <a
-                    class="small-btn"
-                    href="https://www.neom.com/en-us/regions/sindalah"
-                    target="_blank">
-
-                    اكتشف المزيد
-
-                </a>
-
+                <a class="small-btn"
+                   href="https://www.neom.com/en-us/regions/sindalah"
+                   target="_blank" rel="noopener noreferrer"
+                   data-ar="اكتشف المزيد" data-en="Discover More">اكتشف المزيد</a>
             </div>
-
         </div>
 
-
-
-        <!-- UM AL-QAMARI -->
-
         <div class="island-card">
-
             <div class="island-image qamari-image">
-
-                <img
-                    src="umm aiqamari.jpg"
-                    alt="جزيرة أم القماري">
-
+                <img src="umm aiqamari.jpg" alt="جزيرة أم القماري"
+                     data-alt-ar="جزيرة أم القماري" data-alt-en="Umm Al-Qamari Island">
             </div>
-
-
             <div class="island-content">
-
-                <h3>
-                    جزيرة أم القماري
-                </h3>
-
-                <p>
-                    تتميز برمالها البيضاء وطبيعتها
-                    التي تحتضن أسراب الطيور وسط
-                    مياه البحر الأحمر.
+                <h3 data-ar="جزيرة أم القماري" data-en="Umm Al-Qamari Island">جزيرة أم القماري</h3>
+                <p data-ar="تتميز برمالها البيضاء وطبيعتها التي تحتضن أسراب الطيور وسط مياه البحر الأحمر."
+                   data-en="Known for its white sands and natural habitats for flocks of birds in the Red Sea.">
+                    تتميز برمالها البيضاء وطبيعتها التي تحتضن أسراب الطيور وسط مياه البحر الأحمر.
                 </p>
-                  <a
-                    class="small-btn"
-                    href=" https://saudipedia.com/%D9%85%D8%A7-%D8%A7%D9%84%D9%83%D8%A7%D8%A6%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D8%B7%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AD%D9%85%D9%8A%D8%A9-%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9-%D8%A3%D9%85-%D8%A7%D9%84%D9%82%D9%85%D8%A7%D8%B1%D9%8A%D8%9F "
-                    target="_blank">
-
-                    اكتشف المزيد
-
-                </a>
-
-
+                <a class="small-btn"
+                   href=" https://saudipedia.com/%D9%85%D8%A7-%D8%A7%D9%84%D9%83%D8%A7%D8%A6%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D8%B7%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%AD%D9%85%D9%8A%D8%A9-%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9-%D8%A3%D9%85-%D8%A7%D9%84%D9%82%D9%85%D8%A7%D8%B1%D9%8A%D8%9F "
+                   target="_blank" rel="noopener noreferrer"
+                   data-ar="اكتشف المزيد" data-en="Discover More">اكتشف المزيد</a>
             </div>
-
         </div>
-
 
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     MARINE LIFE
-========================= -->
-
 <section class="marine" id="marine">
-
-
     <div class="section-title">
-
-        <h2>
-            الحياة البحرية
-        </h2>
-
-        <p>
+        <h2 data-ar="الحياة البحرية" data-en="Marine Life">الحياة البحرية</h2>
+        <p data-ar="عالم غني ومتنوع تحت مياه البحر الأحمر"
+           data-en="A rich and diverse world beneath the Red Sea">
             عالم غني ومتنوع تحت مياه البحر الأحمر
         </p>
-
     </div>
-
-
 
     <div class="marine-grid">
 
-
-        <!-- TURTLE -->
-
         <div class="marine-card">
-
-            <img
-                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Green%20turtle%20in%20the%20red%20sea.jpg"
-                alt="السلاحف البحرية">
-
-            <h3>
-                🐢 السلاحف البحرية
-            </h3>
-
-            <p>
-                من الكائنات البحرية التي تعيش
-                في بيئة البحر الأحمر.
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Green%20turtle%20in%20the%20red%20sea.jpg"
+                 alt="السلاحف البحرية"
+                 data-alt-ar="السلاحف البحرية" data-alt-en="Sea Turtles">
+            <h3 data-ar="🐢 السلاحف البحرية" data-en="🐢 Sea Turtles">🐢 السلاحف البحرية</h3>
+            <p data-ar="من الكائنات البحرية التي تعيش في بيئة البحر الأحمر."
+               data-en="Marine animals that live in the Red Sea ecosystem.">
+                من الكائنات البحرية التي تعيش في بيئة البحر الأحمر.
             </p>
-
         </div>
 
-
-
-        <!-- DOLPHIN -->
-
         <div class="marine-card">
-
-            <img
-                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Red%20Sea%20Dolphins.JPG"
-                alt="الدلافين">
-
-            <h3>
-                🐬 الدلافين
-            </h3>
-
-            <p>
-                تتميز مياه البحر الأحمر بوجود
-                أنواع متنوعة من الدلافين.
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Red%20Sea%20Dolphins.JPG"
+                 alt="الدلافين"
+                 data-alt-ar="الدلافين" data-alt-en="Dolphins">
+            <h3 data-ar="🐬 الدلافين" data-en="🐬 Dolphins">🐬 الدلافين</h3>
+            <p data-ar="تتميز مياه البحر الأحمر بوجود أنواع متنوعة من الدلافين."
+               data-en="The Red Sea is home to different species of dolphins.">
+                تتميز مياه البحر الأحمر بوجود أنواع متنوعة من الدلافين.
             </p>
-
         </div>
 
-
-
-        <!-- FISH -->
-
         <div class="marine-card">
-
-            <img
-                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pez%20piedra%20de%20arrecife%20%28Synanceia%20verrucosa%29%2C%20Yeda%2C%20Arabia%20Saudita%2C%202025-05-21%2C%20DD%2096.jpg"
-                alt="أسماك البحر الأحمر">
-
-            <h3>
-                🐠 الأسماك
-            </h3>
-
-            <p>
-                تضم المياه السعودية تنوعًا كبيرًا
-                من الأسماك البحرية.
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pez%20piedra%20de%20arrecife%20%28Synanceia%20verrucosa%29%2C%20Yeda%2C%20Arabia%20Saudita%2C%202025-05-21%2C%20DD%2096.jpg"
+                 alt="أسماك البحر الأحمر"
+                 data-alt-ar="أسماك البحر الأحمر" data-alt-en="Red Sea Fish">
+            <h3 data-ar="🐠 الأسماك" data-en="🐠 Fish">🐠 الأسماك</h3>
+            <p data-ar="تضم المياه السعودية تنوعًا كبيرًا من الأسماك البحرية."
+               data-en="Saudi waters contain a wide variety of marine fish.">
+                تضم المياه السعودية تنوعًا كبيرًا من الأسماك البحرية.
             </p>
-
         </div>
 
-
-
-        <!-- CORAL -->
-
         <div class="marine-card">
-
-            <img
-                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coral%20reef%20in%20the%20red%20sea.jpg"
-                alt="الشعاب المرجانية">
-
-            <h3>
-                🪸 الشعاب المرجانية
-            </h3>
-
-            <p>
-                تعد الشعاب المرجانية موطنًا
-                مهمًا للعديد من الكائنات البحرية.
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coral%20reef%20in%20the%20red%20sea.jpg"
+                 alt="الشعاب المرجانية"
+                 data-alt-ar="الشعاب المرجانية" data-alt-en="Coral Reefs">
+            <h3 data-ar="🪸 الشعاب المرجانية" data-en="🪸 Coral Reefs">🪸 الشعاب المرجانية</h3>
+            <p data-ar="تعد الشعاب المرجانية موطنًا مهمًا للعديد من الكائنات البحرية."
+               data-en="Coral reefs provide important habitats for many marine species.">
+                تعد الشعاب المرجانية موطنًا مهمًا للعديد من الكائنات البحرية.
             </p>
-
         </div>
-
 
     </div>
-
 </section>
-
-
-
-<!-- =========================
-     GALLERY
-========================= -->
 
 <section class="gallery" id="gallery">
-
-
     <div class="section-title">
-
-        <h2>
-            📷 معرض الصور
-        </h2>
-
-        <p>
+        <h2 data-ar="📷 معرض الصور" data-en="📷 Photo Gallery">📷 معرض الصور</h2>
+        <p data-ar="صور من جزر المملكة العربية السعودية"
+           data-en="Photos of the islands of Saudi Arabia">
             صور من جزر المملكة العربية السعودية
         </p>
-
     </div>
-
-
 
     <div class="gallery-wrapper">
-
-
-        <button
-            class="gallery-btn"
-            id="prevBtn">
-
-            ❮
-
-        </button>
-
-
+        <button class="gallery-btn" id="prevBtn" aria-label="Previous images">❮</button>
 
         <div class="gallery-container">
-
-            <div
-                class="gallery-track"
-                id="galleryTrack">
-
-
-                <!-- FARASAN -->
+            <div class="gallery-track" id="galleryTrack">
 
                 <div class="gallery-item">
-
-                    <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Farasan%20Islands.jpg"
-                        alt="جزر فرسان">
-
+                    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Farasan%20Islands.jpg"
+                         alt="جزر فرسان" data-alt-ar="جزر فرسان" data-alt-en="Farasan Islands">
                 </div>
-
-
-                <!-- FARASAN SUNSET -->
 
                 <div class="gallery-item">
-
-                    <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Farasan%20sunrise.jpg"
-                        alt="فرسان">
-
+                    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Farasan%20sunrise.jpg"
+                         alt="فرسان" data-alt-ar="فرسان" data-alt-en="Farasan">
                 </div>
-
-
-                <!-- FARASAN RED SEA -->
 
                 <div class="gallery-item">
-
-                    <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Red%20Sea%20at%20Farasan%20Island%2C%20Jazan%20Region%2C%20Saudi%20Arabia.jpg"
-                        alt="البحر الأحمر في فرسان">
-
+                    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Red%20Sea%20at%20Farasan%20Island%2C%20Jazan%20Region%2C%20Saudi%20Arabia.jpg"
+                         alt="البحر الأحمر في فرسان"
+                         data-alt-ar="البحر الأحمر في فرسان" data-alt-en="Red Sea at Farasan Island">
                 </div>
-
-
-                <!-- DUMSUK -->
 
                 <div class="gallery-item">
-
-                    <img
-                        src="R.jpg"
-                        alt="جزيرة شيبارة">
-
+                    <img src="R.jpg" alt="جزيرة شيبارة"
+                         data-alt-ar="جزيرة شيبارة" data-alt-en="Sheybarah Island">
                 </div>
-
-
-                <!-- SINDALAH -->
 
                 <div class="gallery-item">
-
-                    <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sindalah%20Illustartion.png"
-                        alt="جزيرة سندالة">
-
+                    <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sindalah%20Illustartion.png"
+                         alt="جزيرة سندالة"
+                         data-alt-ar="جزيرة سندالة" data-alt-en="Sindalah Island">
                 </div>
-
-
-                <!-- TAROUT -->
 
                 <div class="gallery-item">
-
-                    <img
-                        src="Red-Sea-Global-1.jpg"
-                        alt="جزيرة تاروت">
-
+                    <img src="Red-Sea-Global-1.jpg" alt="جزيرة تاروت"
+                         data-alt-ar="جزيرة تاروت" data-alt-en="Tarout Island">
                 </div>
-
-
-                <!-- QAMARI -->
 
                 <div class="gallery-item">
-
-                    <img
-                        src="https://saudipedia.com/var/site/storage/images/5/6/2/6/5496265-1-ara-SA/b7b7d9a88cfa-67442.jpg"
-                        alt="جزيرة أم القماري">
-
+                    <img src="https://saudipedia.com/var/site/storage/images/5/6/2/6/5496265-1-ara-SA/b7b7d9a88cfa-67442.jpg"
+                         alt="جزيرة أم القماري"
+                         data-alt-ar="جزيرة أم القماري" data-alt-en="Umm Al-Qamari Island">
                 </div>
-
-
-                <!-- RED SEA SAUDI -->
 
                 <div class="gallery-item">
-
-                    <img
-                        src="Jeeda.jpg"
-                        alt="البحر الأحمر في السعودية">
-
+                    <img src="Jeeda.jpg" alt="البحر الأحمر في السعودية"
+                         data-alt-ar="البحر الأحمر في السعودية" data-alt-en="The Red Sea in Saudi Arabia">
                 </div>
-
-
-                <!-- QUMMAH / FARASAN -->
 
                 <div class="gallery-item">
-
-                    <img
-                        src="saw.jpg"
-                        alt="جزر فرسان">
-
+                    <img src="saw.jpg" alt="جزر فرسان"
+                         data-alt-ar="جزر فرسان" data-alt-en="Farasan Islands">
                 </div>
-
 
             </div>
-
         </div>
 
-
-
-        <button
-            class="gallery-btn"
-            id="nextBtn">
-
-            ❯
-
-        </button>
-
-
+        <button class="gallery-btn" id="nextBtn" aria-label="Next images">❯</button>
     </div>
 
-
-
     <div class="gallery-dots" id="dots"></div>
-
-
 </section>
 
-
-
-<!-- =========================
-     POPUP
-========================= -->
-
-<div
-    class="popup"
-    id="popup">
-
-
-    <span
-        class="close-popup"
-        id="closePopup">
-
-        ×
-
-    </span>
-
-
-    <img
-        id="popupImage"
-        src=""
-        alt="صورة">
-
+<div class="popup" id="popup">
+    <span class="close-popup" id="closePopup">×</span>
+    <img id="popupImage" src="" alt="صورة">
 </div>
 
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
-
-    <h3>
-     رحلة إلى جزر المملكة العربية السعودية
+    <h3 data-ar="رحلة إلى جزر المملكة العربية السعودية"
+        data-en="A Journey to the Islands of Saudi Arabia">
+        رحلة إلى جزر المملكة العربية السعودية
     </h3>
-
-    <p>
+    <p data-ar="اكتشف جمال الطبيعة والحياة البحرية في المملكة العربية السعودية"
+       data-en="Discover the natural beauty and marine life of Saudi Arabia">
         اكتشف جمال الطبيعة والحياة البحرية في المملكة العربية السعودية
     </p>
-
 </footer>
 
-
-
 <script>
+    const track = document.getElementById("galleryTrack");
+    const items = document.querySelectorAll(".gallery-item");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+    const dots = document.getElementById("dots");
 
+    let position = 0;
 
-/* =========================
-   GALLERY
-========================= */
-
-
-const track =
-    document.getElementById("galleryTrack");
-
-const items =
-    document.querySelectorAll(".gallery-item");
-
-const nextBtn =
-    document.getElementById("nextBtn");
-
-const prevBtn =
-    document.getElementById("prevBtn");
-
-const dots =
-    document.getElementById("dots");
-
-
-let position = 0;
-
-
-
-function getVisible() {
-
-    if (window.innerWidth <= 600) {
-
-        return 1;
-
-    }
-
-    if (window.innerWidth <= 1000) {
-
-        return 2;
-
-    }
-
-    return 3;
-
-}
-
-
-
-function createDots() {
-
-    dots.innerHTML = "";
-
-    const visible = getVisible();
-
-    const pages =
-        Math.ceil(items.length / visible);
-
-
-    for (let i = 0; i < pages; i++) {
-
-        const dot =
-            document.createElement("span");
-
-        dot.className = "dot";
-
-
-        if (i === 0) {
-
-            dot.classList.add("active");
-
+    function getVisible() {
+        if (window.innerWidth <= 600) {
+            return 1;
         }
 
+        if (window.innerWidth <= 1000) {
+            return 2;
+        }
 
-        dot.addEventListener("click", function() {
-
-            position = i * visible;
-
-            updateGallery();
-
-        });
-
-
-        dots.appendChild(dot);
-
+        return 3;
     }
 
-}
+    function createDots() {
+        dots.innerHTML = "";
 
+        const visible = getVisible();
+        const pages = Math.ceil(items.length / visible);
 
+        for (let i = 0; i < pages; i++) {
+            const dot = document.createElement("span");
+            dot.className = "dot";
 
-function updateDots() {
+            if (i === 0) {
+                dot.classList.add("active");
+            }
 
-    const visible = getVisible();
+            dot.addEventListener("click", function() {
+                position = i * visible;
+                updateGallery();
+            });
 
-    const page =
-        Math.floor(position / visible);
+            dots.appendChild(dot);
+        }
+    }
 
-    const allDots =
-        document.querySelectorAll(".dot");
+    function updateDots() {
+        const visible = getVisible();
+        const page = Math.floor(position / visible);
+        const allDots = document.querySelectorAll(".dot");
 
+        allDots.forEach(function(dot, index) {
+            dot.classList.toggle("active", index === page);
+        });
+    }
 
-    allDots.forEach(function(dot, index) {
+    function updateGallery() {
+        const visible = getVisible();
+        const itemWidth = items[0].offsetWidth + 15;
+        const max = Math.max(0, items.length - visible);
 
-        dot.classList.toggle(
-            "active",
-            index === page
-        );
+        if (position > max) {
+            position = 0;
+        }
 
+        if (position < 0) {
+            position = max;
+        }
+
+        track.style.transform =
+            `translateX(${position * itemWidth}px)`;
+
+        updateDots();
+    }
+
+    nextBtn.addEventListener("click", function() {
+        position += getVisible();
+        updateGallery();
     });
 
-}
+    prevBtn.addEventListener("click", function() {
+        position -= getVisible();
+        updateGallery();
+    });
 
-
-
-function updateGallery() {
-
-    const visible = getVisible();
-
-    const itemWidth =
-        items[0].offsetWidth + 15;
-
-    const max =
-        items.length - visible;
-
-
-    if (position > max) {
-
+    window.addEventListener("resize", function() {
         position = 0;
-
-    }
-
-
-    if (position < 0) {
-
-        position = max;
-
-    }
-
-
-    track.style.transform =
-        `translateX(${position * itemWidth}px)`;
-
-
-    updateDots();
-
-}
-
-
-
-nextBtn.addEventListener("click", function() {
-
-    const visible = getVisible();
-
-    position += visible;
-
-    updateGallery();
-
-});
-
-
-
-prevBtn.addEventListener("click", function() {
-
-    const visible = getVisible();
-
-    position -= visible;
-
-    updateGallery();
-
-});
-
-
-
-window.addEventListener("resize", function() {
+        createDots();
+        updateGallery();
+    });
 
     createDots();
-
     updateGallery();
 
-});
+    const popup = document.getElementById("popup");
+    const popupImage = document.getElementById("popupImage");
+    const closePopup = document.getElementById("closePopup");
 
-
-
-createDots();
-
-updateGallery();
-
-
-
-/* =========================
-   IMAGE POPUP
-========================= */
-
-
-const popup =
-    document.getElementById("popup");
-
-const popupImage =
-    document.getElementById("popupImage");
-
-const closePopup =
-    document.getElementById("closePopup");
-
-
-
-document
-    .querySelectorAll(".gallery-item img")
-    .forEach(function(image) {
-
-
-        image.addEventListener(
-            "click",
-            function() {
-
-                popup.style.display = "flex";
-
-                popupImage.src =
-                    this.src;
-
-            }
-        );
-
-
+    document.querySelectorAll(".gallery-item img").forEach(function(image) {
+        image.addEventListener("click", function() {
+            popup.style.display = "flex";
+            popupImage.src = this.src;
+            popupImage.alt = this.alt;
+        });
     });
 
-
-
-closePopup.addEventListener(
-    "click",
-    function() {
-
+    closePopup.addEventListener("click", function() {
         popup.style.display = "none";
+    });
 
-    }
-);
-
-
-
-popup.addEventListener(
-    "click",
-    function(event) {
-
+    popup.addEventListener("click", function(event) {
         if (event.target === popup) {
-
             popup.style.display = "none";
-
         }
+    });
 
+    const languageBtn = document.getElementById("languageBtn");
+    let currentLanguage = "ar";
+
+    function changeLanguage(language) {
+        currentLanguage = language;
+
+        document.documentElement.lang = language;
+        document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+
+        document.querySelectorAll("[data-ar][data-en]").forEach(function(element) {
+            element.textContent = element.getAttribute("data-" + language);
+        });
+
+        document.querySelectorAll("[data-alt-ar][data-alt-en]").forEach(function(image) {
+            image.alt = image.getAttribute("data-alt-" + language);
+        });
+
+        document.title = language === "ar"
+            ? "رحلة إلى جزر المملكة العربية السعودية"
+            : "A Journey to the Islands of Saudi Arabia";
+
+        document.body.style.fontFamily = language === "ar"
+            ? '"Cairo", sans-serif'
+            : 'Arial, sans-serif';
+
+        languageBtn.textContent = language === "ar" ? "English" : "العربية";
+        languageBtn.setAttribute(
+            "aria-label",
+            language === "ar" ? "Switch to English" : "التبديل إلى العربية"
+        );
     }
-);
 
-
+    languageBtn.addEventListener("click", function() {
+        changeLanguage(currentLanguage === "ar" ? "en" : "ar");
+    });
 </script>
 
-
 </body>
-
 </html>
